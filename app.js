@@ -46,7 +46,7 @@ function send() {
 
     };
 
-    fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key= AIzaSyDNjHeFmflrCzYzGKnGwkOydbuYzNtG5cc", requestOptions)
+    fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=", requestOptions)
         .then((response) => response.json())
         .then((result) => {
             console.log(result.candidates[0].content.parts[0].text);
